@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    font-weight: lighter;
+}
+body{
+    margin: 0;
+    padding-bottom: 200px;
+    background-color: #333;
+    color: #fff;
+}
+header{
+    background-color: #444;
+    border-bottom: 1px solid #666;
+}
+header .content-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+header h1{ 
+    margin: 0;
+    padding: 10px;
+    cursor: pointer;
+}
+ul, li{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    cursor: pointer;
+}
+.btn{
+    outline: none;
+}
+.sign-btn{
+    background-color: inherit;
+    color: #fff;
+    border: none;
+}
+.remove-post{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: inherit;
+    color: red;
+    border: none;
+    cursor: pointer;
+}
+h1{ text-align: center; }
+.content-wrap{
+    width: 80%;
+    margin: 0 auto;
+}
+#app{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+form input, form button[type=submit], form textarea{
+    color: #fff;
+    outline: none;
+    background-color: inherit;
+}
+form input, form textarea{
+    margin-bottom: 20px;
+    padding: 8px;
+    width: 260px;
+    background-color: inherit;
+    border: none;
+    border-bottom: 1px solid #666;
+}
+form textarea{
+    height: 200px;
+    border: 1px solid #666;
+    resize: none;
+}
+form button[type=submit]{
+    padding: 10px 60px;
+    font-weight: bold;;
+    border: 1px solid #666;
+    border-radius: 20px;
+}
+form button[type=submit]:hover{
+    background-color: #444;
+}
+form input:hover, form input:focus{
+    background-color: #444;
+}
+form input::placeholder{
+    color: #fff;
+}
+header li{
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+}
+header li ul{
+    width: 100px;
+    position: absolute;
+    display: none;
+    top: 59px;
+    background-color: #444;
+}
+header li:hover ul{
+    display: block;
+    width: 100px;
+}
+header li ul li{
+    display: block;
+    padding: 8px;
+}
+header li ul li:hover{
+    background-color: #666;
+}
+header hr{
+    margin: 0;
+    border: 0.5px solid #666;
+}
+.post{
+    position: relative;
+    width: 400px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #666;
+    border-radius: 8px;
+}
+.post .username{ cursor: pointer; }
+.post h2, .post p{
+    margin: 0;
+}
+.post .info{
+    margin-bottom: 20px;
+    font-size: 10px;
+    color: #666;
+}
+.post hr{
+    border: 0.5px solid #666;
+}

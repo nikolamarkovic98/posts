@@ -1,0 +1,8 @@
+{
+    "env": {
+        "MONGO_USERNAME": "nikolahot",
+        "MONGO_PASSWORD": "pasteta",
+        "MONGO_DB": "posts-app",
+        "MONGO_ONLINE": "true"
+    }
+}
